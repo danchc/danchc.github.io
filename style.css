@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap'); /* footer font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap'); /* main font */
+
+/*
+Text color hover: rgb(46, 167, 204)
+
+*/
+
+
+/* all */
+* {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----------- */
+
+body, html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* ===========================================================header settings */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 10px;
+    background-color: white;
+}
+
+/* ============================================================end header settings */
+
+/* ==============================================================nav bar settings */
+li, a {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.logo {
+    color: rgb(230, 117, 25);
+    cursor: pointer;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.links li a {
+    text-transform: uppercase;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+.links li a.active{
+    color: rgb(230, 117, 25);
+
+}
+
+.links li i{
+    opacity: 0.2;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.links li i:hover{
+    color:rgb(230, 117, 25);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.links li a:hover {
+    color: rgb(230, 117, 25);
+    transition: all 0.3s ease 0s;
+}
+/* ============================================================end navbar settings */
+
+
+
+.container-text-main {
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-type{
+    text-align: center;
+    animation: typing 2s steps(8, end), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    border-right: 2px solid;
+    margin-top: 150px;
+    overflow: hidden; 
+    font-family: monospace;
+    font-size: 75px;
+}
+
+@keyframes typing {
+    from { width: 0; }
+  to { width: 8ch; }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.par {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.about-btn {
+    align-items: center;
+    margin-top: 50px;
+    background-color: red;
+    height: 50px;
+    border-radius: 15px;
+    width: 260px;
+}
+
+.about-btn input {
+    cursor: pointer;
+    border: none;
+    background-color: rgb(230, 117, 25);
+    font-size: 30px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.about-btn input:hover{
+    background-color: rgb(255, 115, 0);
+}
+
+
+/* ! =================================LOGIN====================== */
+
+.main{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.container .login-form {
+    padding: 50px;
+}
+
+.container .login-form p{
+    padding: 30px;
+}
+
+.container .login-form .title{
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.container .login-form .input-field{
+    margin-top: 30px;
+    height: 40px;
+}
+
+.input-field input {
+    padding: 5px 30px;
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid;
+    border-radius: 10px;
+}
+
+.input-field input:is(:focus){
+    border-bottom-color: rgb(230, 117, 25);
+}
+
+.login-button{
+    height: 40px;
+    margin-top: 30px;
+}
+
+.login-button input{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(230, 117, 25);
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.login-button input:hover{
+    transition: all 0.3s ease 0s;
+    background-color: rgb(230, 117, 25);
+}
+
+.login-signup-text {
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.login-signup-text a {
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: rgb(230, 117, 25);
+}
+
+/* !============================================================ */
+/* main settings */
+
+.bg-main img{
+    width: 100%;
+    height: 100%;
+    filter: blur(2px);
+    transform: scale(1.1);
+}
+.bg-main{
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* end main setting */
+
+/*============================================================= footer settings */
+
+.footer {
+    padding: 20px 0;
+    background-color: white;
+    /* TODO: da sistemare */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.footer .social a{
+    font-size: 20px;
+    color:rgb(230, 117, 25);
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .social a:hover{
+    opacity: 1;
+}
+
+.footer .copyright{
+    font-family: 'Didact Gothic', sans-serif;
+    color:rgb(230, 117, 25);
+    text-align: center;
+    font-size: 20px;
+}
+
+/*=========================================================== end footer settings */
+
+/* other screens settings */
+
+@media only screen and (max-width: 767px) {
+    header {
+        height: 130px;
+        flex-direction: column;
+    }
+}
+/*end other screens settings */
