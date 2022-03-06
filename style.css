@@ -149,6 +149,9 @@ li, a {
     background-color: rgb(255, 115, 0);
 }
 
+.about-btn input a {
+    text-decoration: none;
+}
 
 /* ! =================================LOGIN====================== */
 
