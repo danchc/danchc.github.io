@@ -46,7 +46,7 @@ li, a {
 }
 
 .logo {
-    color: rgb(230, 117, 25);
+    color: rgb(123, 0, 255);
     cursor: pointer;
     font-size: 40px;
     letter-spacing: 2px;
@@ -68,7 +68,7 @@ li, a {
 }
 
 .links li a.active{
-    color: rgb(230, 117, 25);
+    color: rgb(123, 0, 255);
 
 }
 
@@ -79,13 +79,13 @@ li, a {
 }
 
 .links li i:hover{
-    color:rgb(230, 117, 25);
+    color:rgb(123, 0, 255);
     opacity: 1;
     cursor: pointer;
 }
 
 .links li a:hover {
-    color: rgb(230, 117, 25);
+    color: rgb(123, 0, 255);
     transition: all 0.3s ease 0s;
 }
 /* ============================================================end navbar settings */
@@ -129,7 +129,6 @@ li, a {
 .about-btn {
     align-items: center;
     margin-top: 50px;
-    background-color: red;
     height: 50px;
     border-radius: 15px;
     width: 260px;
@@ -138,15 +137,18 @@ li, a {
 .about-btn input {
     cursor: pointer;
     border: none;
-    background-color: rgb(230, 117, 25);
+    opacity: 0.9;
+    background-color: rgb(123, 0, 255);
     font-size: 30px;
+    color: white;;
     border-radius: 15px;
     width: 100%;
     height: 100%;
 }
 
 .about-btn input:hover{
-    background-color: rgb(255, 115, 0);
+    opacity: 1;
+    background-color: rgb(123, 0, 255);
 }
 
 .about-btn a {
@@ -201,7 +203,7 @@ li, a {
 }
 
 .input-field input:is(:focus){
-    border-bottom-color: rgb(230, 117, 25);
+    border-bottom-color: rgb(123, 0, 255);
 }
 
 .login-button{
@@ -218,14 +220,14 @@ li, a {
     border: none;
     border-radius: 5px;
     color: white;
-    background-color: rgb(230, 117, 25);
+    background-color: rgb(123, 0, 255);
     cursor: pointer;
     transition: all 0.3 ease;
 }
 
 .login-button input:hover{
     transition: all 0.3s ease 0s;
-    background-color: rgb(230, 117, 25);
+    background-color: rgb(123, 0, 255);
 }
 
 .login-signup-text {
@@ -237,7 +239,7 @@ li, a {
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
-    color: rgb(230, 117, 25);
+    color: rgb(123, 0, 255);
 }
 
 /* !============================================================ */
@@ -277,7 +279,7 @@ li, a {
 
 .footer .social a{
     font-size: 20px;
-    color:rgb(230, 117, 25);
+    color:rgb(123, 0, 255);
     width: 40px;
     height: 10px;
     display: inline-block;
@@ -292,7 +294,7 @@ li, a {
 
 .footer .copyright{
     font-family: 'Didact Gothic', sans-serif;
-    color:rgb(230, 117, 25);
+    color:rgb(123, 0, 255);
     text-align: center;
     font-size: 20px;
 }
