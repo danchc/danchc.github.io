@@ -6,9 +6,17 @@ Text color hover: rgb(46, 167, 204)
 
 */
 
+.light-mode {
+
+}
+
+.dark-mode {
+
+}
 
 /* all */
 * {
+    transition: background-color 0.6s ease;
     font-family: 'Source Sans 3', sans-serif;
     margin: 0;
     padding: 0;
@@ -26,18 +34,21 @@ body {
     min-height: 100%;
 }
 
-/* ===========================================================header settings */
-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 40px 10px;
-    background-color: white;
+/* ==============================================================nav bar settings */
+.fa-sun {
+    color: white;
 }
 
-/* ============================================================end header settings */
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+}
 
-/* ==============================================================nav bar settings */
+nav #nav-bar {
+    margin-top: 35px;
+}
+
 li, a {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 800;
@@ -45,7 +56,8 @@ li, a {
     text-decoration: none;
 }
 
-.logo {
+#logo {
+    margin-top: 20px;
     color: rgb(123, 0, 255);
     cursor: pointer;
     font-size: 40px;
@@ -90,6 +102,17 @@ li, a {
 }
 /* ============================================================end navbar settings */
 
+/* ===========================================================header settings */
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 10px;
+    background-color: white;
+}
+
+/* ============================================================end header settings */
+
 
 
 .container-text-main {
@@ -101,7 +124,7 @@ li, a {
 
 .text-type{
     text-align: center;
-    animation: typing 2s steps(8, end), blink .5s step-end infinite alternate;
+    animation: typing 1.5s steps(8, end), blink .5s step-end infinite alternate;
     white-space: nowrap;
     border-right: 2px solid;
     margin-top: 150px;
@@ -300,6 +323,15 @@ li, a {
 }
 
 /*=========================================================== end footer settings */
+
+/* */
+
+.dark-mode, .dark-mode * {
+    background-color: rgb(26, 24, 24);
+    color: white;
+}
+
+/* */
 
 /* other screens settings */
 
