@@ -6,21 +6,37 @@ Text color hover: rgb(46, 167, 204)
 
 */
 
-.light-mode {
-
-}
-
-.dark-mode {
-
-}
+/*** Light Mode Theme ***/
+:root, [data-theme="default"] {
+    --body-bg-color: #fff;
+    --card-bg-color: #fff;
+    --box-shadow-color: rgba(0,0,0,0.2);
+    --text-color: #333;
+    --switch-on-color: #444352;
+    --switch-off-color: #ccc;
+    --toggler-color: #fff;
+    --img: url('/resources/dclogo.png');
+  }
+  /* Dark Mode Theme */
+  [data-theme="dark-theme"] {
+    --body-bg-color: #444352;
+    --card-bg-color: #545363;
+    --box-shadow-color: rgb(18, 18, 19, 0.2);
+    --text-color: #efefef;
+    --toggler-color: #444352;
+    --switch-on-color: #fff;
+    --switch-off-color: #ccc;
+    --img: url('/resources/dclogo-dark.png');
+  }
 
 /* all */
 * {
-    transition: background-color 0.6s ease;
+    color: var(--text-color);
     font-family: 'Source Sans 3', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: color 0.55s ease-in;
 }
 /* ----------- */
 
@@ -35,18 +51,18 @@ body {
 }
 
 /* ==============================================================nav bar settings */
-.fa-sun {
-    color: white;
-}
 
 nav {
     display: flex;
     justify-content: space-around;
-    height: 10%;
+    align-items: center;
+    height: 12%;
 }
 
 nav #nav-bar {
-    margin-top: 35px;
+    margin-left: 30px;
+    height: 35px;
+    padding: 50px;
 }
 
 li, a {
@@ -56,50 +72,55 @@ li, a {
     text-decoration: none;
 }
 
-#logo {
-    margin-top: 20px;
-    color: rgb(123, 0, 255);
-    cursor: pointer;
-    font-size: 40px;
-    letter-spacing: 2px;
+nav #logo-container {
+    display: flex;
+    overflow: hidden;
+    margin: 200px;
+    width: 50vh;
+    height: 10vh;
 }
 
-.links {
+#logo-container img{
+    object-fit: cover;
+    max-width: inherit;
+    max-height: inherit;
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+}
+
+ul {
     list-style: none;
 }
 
-.links li {
+ul li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.links li a {
+ul li a {
     text-transform: uppercase;
-    color: black;
-    transition: all 0.3s ease 0s;
 }
 
-.links li a.active{
+ul li a.active{
     color: rgb(123, 0, 255);
-
 }
 
-.links li i{
-    opacity: 0.2;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
+ul li a:hover {
+    color: rgb(123, 0, 255);
 }
 
-.links li i:hover{
+nav i.fa {
+    padding: 50px;
+    margin-top: 32px;
+}
+
+nav i:hover{
     color:rgb(123, 0, 255);
     opacity: 1;
     cursor: pointer;
 }
 
-.links li a:hover {
-    color: rgb(123, 0, 255);
-    transition: all 0.3s ease 0s;
-}
 /* ============================================================end navbar settings */
 
 /* ===========================================================header settings */
