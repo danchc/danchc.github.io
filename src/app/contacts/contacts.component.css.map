@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "principal.component.scss"
+        "contacts.component.scss"
     ],
     "names": [],
-    "file": "principal.component.css"
+    "file": "contacts.component.css"
 }
