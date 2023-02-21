@@ -4,63 +4,100 @@
             <h1 class="display-3" id="progetti">💻 I miei progetti</h1>
         </div>
         <hr>
-        <div class="row row-cols-1 row-cols-md-2 g-4 m-4">
-            <div class="col">
-                <div class="card shadow-lg">
-                    <div class="container p-4 text-center">
-                        <img src="../../assets/projects-logos/r3-logo-dark.png" class="img-fluid" width="300" height="130" alt="r3catering-webapp">
-                    </div>
-                    
-                    <div class="card-body">
-                        <h5 class="card-title">🌮 R3 Catering 🌮</h5>
-                        <p class="card-text">Applicazione web per gestire un'agenzia di catering basata su Spring Boot.</p>
 
-                        <!-- btn -->
-                        <div class="container- text-center">
-                            <div id="container">
-                                <a href="">
-                                    <a href="https://github.com/danchc/r3catering" target="_blank">
-                                        <button class="learn-more">
-                                            <span class="circle" aria-hidden="true">
-                                                <span class="icon arrow"></span>
-                                            </span>
-                                                <span class="button-text">Github</span>
-                                        </button>
-                                    </a>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <div class="card shadow-lg">
-                    <div class="container text-center p-4 ">
-                        <img src="../../assets/projects-logos/logo.png" class="img-fluid" width="350" height="130" alt="r3tour-webapp">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">✈️ R3 Tour ✈️</h5>
-                        <p class="card-text"> 
-                            Applicazione web per gestire un'agenzia di viaggi basata su Spring Boot e Bootstrap. </p>
-                        <!-- btn -->
-                        <div class="container text-center">
-                            <div id="container">
-                                <a href="https://github.com/danchc/R3-Tour" target="_blank">
-                                    <button class="learn-more">
-                                        <span class="circle" aria-hidden="true">
-                                            <span class="icon arrow"></span>
-                                        </span>
-                                            <span class="button-text">Github</span>
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="container ">
+            <div class="container text-center">
+               
+                <mdb-carousel [controls]="true" [indicators]="true" [animation]="'fade'"  [dark]="true">
+                    <mdb-carousel-item>
+                        <div class="col p-5">
+                            <div class="card shadow-lg">
+                                <div class="container p-4 ms-2 text-center">
+                                    <img src="../../assets/projects-logos/r3-logo-dark.png" class="img-fluid" width="290" height="150" alt="r3catering-webapp">
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h5 class="card-title fs-2">🌮 R3 Catering 🌮</h5>
+                                    <div class="card-text fs-5 p-3">Applicazione web per gestire un'agenzia di catering basata su <span class="fw-semibold">Spring Boot</span>.</div>
             
+                                    <!-- btn -->
+                                    <div class="container- text-center">
+                                        <div id="container">
+                                            <a href="">
+                                                <a href="https://github.com/danchc/r3catering" target="_blank">
+                                                    <button class="learn-more">
+                                                        <span class="circle" aria-hidden="true">
+                                                            <span class="icon arrow"></span>
+                                                        </span>
+                                                            <span class="button-text">Github</span>
+                                                    </button>
+                                                </a>
+                                            </a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </mdb-carousel-item>
+                    <mdb-carousel-item>
+                        <div class="col p-5">
+                            <div class="card shadow-lg">
+                                <div class="container text-center p-4 ms-lg-2">
+                                    <img src="../../assets/projects-logos/logo.png" class="img-fluid" width="350" height="130" alt="r3tour-webapp">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-2">✈️ R3 Tour ✈️</h5>
+                                    <div class="card-text fs-5 p-3"> 
+                                        Applicazione web per gestire un'agenzia di viaggi basata su <span class="fw-semibold">Spring Boot</span> e <span class="fw-semibold">Bootstrap</span>. </div>
+                                    <!-- btn -->
+                                    <div class="container text-center">
+                                        <div id="container">
+                                            <a href="https://github.com/danchc/R3-Tour" target="_blank">
+                                                <button class="learn-more">
+                                                    <span class="circle" aria-hidden="true">
+                                                        <span class="icon arrow"></span>
+                                                    </span>
+                                                        <span class="button-text">Github</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mdb-carousel-item>
+                    <mdb-carousel-item>
+                        <div class="col p-5">
+                            <div class="card shadow-lg">
+                                <div class="container text-center ms-lg-4">
+                                    <img src="../../assets/projects-logos/workact.png" class="img-fluid" width="495" height="230" alt="workact-app">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title fs-2 ">🏋️‍♂️ WORKACT 🥑</h5>
+                                    <div class="card-text fs-5 p-3"> 
+                                        Applicazione per <span class="fst-italic">Android</span> e <span class="fst-italic">iOS</span>, scritta in <span class="fw-semibold">Flutter</span>, per semplificare il tracciamento degli allenamenti e dell'alimentazione. 
+                                    </div>
+                                    <!-- btn -->
+                                    <div class="container text-center">
+                                        <div id="container">
+                                            <a href="https://github.com/danchc/workact_repo" target="_blank">
+                                                <button class="learn-more">
+                                                    <span class="circle" aria-hidden="true">
+                                                        <span class="icon arrow"></span>
+                                                    </span>
+                                                        <span class="button-text">Github</span>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </mdb-carousel-item>
+                  </mdb-carousel>
+                
+            </div>
         </div>
     </div>
 </div>
